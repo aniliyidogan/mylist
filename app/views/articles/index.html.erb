@@ -1,25 +1,23 @@
 <div class="center">
-<div class="mylisttable">
-<div class="">
-<h1></h1>
+	<div class="mylisttable">
+		<table class="table">
+  			<tr>
+    			<th style="color: green;">Subject</th>
+    			<th style="color:;">Target</th>
+			    <th style="color: orange;">İn</th>
+			    <th style="color: red;">Out</th>
+  			</tr>
  
-<table class="table table-hover">
-  <tr>
-    <th>Subject</th>
-    <th>Target</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.subject %></td>
-      <td><%= article.target %></td>
-      <td><%= link_to 'Come on!', article_path(article) %></td>
-      <td><%= link_to 'Delete!', article_path(article),
-              method: :delete,
-              data: { confirm: 'Delete?' } %></td>
-    </tr>
-  <% end %>
-</table>
-</div>
-</div>
+ 			 <% @articles.each do |article| %>
+    		<tr>
+			      <td><%= article.subject %></td>
+			      <td><%= article.target %></td>
+			      <td><%= link_to 'Come on!', article_path(article) %></td>
+			      <td><%= link_to 'Delete!', article_path(article),
+			              method: :delete,
+			              data: { confirm: 'Delete?' } %></td>
+    		</tr>
+  			<% end %>
+  		</table>
+	</div>
 </div>
