@@ -1,2 +1,2 @@
 # mylist
-MyList Application (v0.2.1)
+MyList Application (0.2.1)
