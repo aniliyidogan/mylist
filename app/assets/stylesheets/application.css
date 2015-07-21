@@ -13,24 +13,38 @@
  *= require_tree .
  *= require_self
  */
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
 
 textarea { resize: none; }
+
 .center {
     margin: auto;
     width: 70%; 
     padding: 200px;
 }
+
 .mylisttable{
 padding-left: 15px;
 padding-right: 15px;
-padding-top: 15px;
+padding-top: 18px;
 padding-bottom: 10px;
-border-radius: 2%;
+border-radius: 8px;
 background-color: #C3F9B2;
 box-shadow: 3px 3px 2px #;
 opacity: 0.8;
 }
+
 body{
 	background-color: #F0FAFC;
+}
 
+tr, th{
+
+    border-bottom: 1.2px solid #1dd;
+}
+
+input[placeholder], textarea[placeholder] {
+	opacity: 0.9;
+	text-align: center;
 }
