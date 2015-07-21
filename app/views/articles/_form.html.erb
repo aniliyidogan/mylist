@@ -1,0 +1,17 @@
+<div class="center">
+	<%= form_for :article, url: articles_path do |f| %>
+
+	<form>
+  		<div class="form-group">
+    		<input type="title" name="article[subject]"class="form-control" placeholder="Title">
+    	</div>
+  		<div class="form-group">  
+    		<textarea type="text" name="article[target]" class="form-control" placeholder="Text"></textarea>
+  		</div>
+
+  			<center><%= f.submit "Life is short", class: 'btn btn-default btn-sm' %>
+  			</center>
+	</form>
+
+	<% end %>
+</div>

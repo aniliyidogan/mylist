@@ -1,0 +1,25 @@
+<div class="center">
+<div class="mylisttable">
+<div class="">
+<h1></h1>
+ 
+<table class="table table-hover">
+  <tr>
+    <th>Subject</th>
+    <th>Target</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.subject %></td>
+      <td><%= article.target %></td>
+      <td><%= link_to 'Come on!', article_path(article) %></td>
+      <td><%= link_to 'Delete!', article_path(article),
+              method: :delete,
+              data: { confirm: 'Delete?' } %></td>
+    </tr>
+  <% end %>
+</table>
+</div>
+</div>
+</div>
