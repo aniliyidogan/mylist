@@ -3,9 +3,10 @@
 		<table class="table">
   			<tr>
     			<th style="color: green;">Subject</th>
-    			<th style="color:;">Target</th>
+    			<th>Target</th>
 			    <th style="color: orange;">İn</th>
 			    <th style="color: red;">Out</th>
+			    <th style="color: white;">Date</th>
   			</tr>
  
  			 <% @articles.each do |article| %>
@@ -16,6 +17,7 @@
 			      <td><%= link_to 'Delete!', article_path(article),
 			              method: :delete,
 			              data: { confirm: 'Delete?' } %></td>
+			      <td><%= I18n.localize(article.date,format:"%d %B") %></td>
     		</tr>
   			<% end %>
   		</table>
