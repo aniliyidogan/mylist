@@ -3,6 +3,7 @@ class CreateArticles < ActiveRecord::Migration
     create_table :articles do |t|
       t.string :subject
       t.text :target
+      t.date :date
 
       t.timestamps null: false
     end
