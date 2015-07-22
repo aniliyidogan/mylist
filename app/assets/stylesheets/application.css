@@ -14,14 +14,19 @@
  *= require_self
  */
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:100);
 
+h1{
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 100px;
+}
 
 textarea { resize: none; }
 
 .center {
     margin: auto;
-    width: 70%; 
-    padding: 200px;
+    width: 40%; 
+    padding: 50px;
 }
 
 .mylisttable{
@@ -33,6 +38,18 @@ border-radius: 8px;
 background-color: #C3F9B2;
 box-shadow: 3px 3px 2px #;
 opacity: 0.8;
+}
+
+.tab{
+	
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	background-color: #96E29D;
+	margin: auto;
+    width: 30%; 
+    opacity: 0.9;
+    position: ;
 }
 
 body{
