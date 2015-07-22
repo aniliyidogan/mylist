@@ -29,6 +29,6 @@ def destroy
 
 private
   def article_params
-    params.require(:article).permit(:subject, :target)
+    params.require(:article).permit(:subject, :target, :date)
   end
 end
