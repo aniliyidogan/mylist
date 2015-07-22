@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20150720122447) do
   create_table "articles", force: :cascade do |t|
     t.string   "subject"
     t.text     "target"
+    t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
