@@ -1,2 +1,3 @@
 # mylist
-MyList Application (0.2.1)
+MyList Application (0.3.4)
+# coming soon
