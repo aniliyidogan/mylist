@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function myFunction() {
+    var x = document.getElementById("Done");
+    x.style.fontSize = "25px";           
+    x.style.color = "green"; 
+}

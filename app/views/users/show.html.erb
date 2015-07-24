@@ -1,0 +1,5 @@
+<div class="center">
+	<h2><center><%= @user.name %></center></h2>
+	<p><center>&larr;<%= link_to "Delete Profile", @user, method: :delete,
+		data: {confirm: 'Delete?' } %>&rarr;</p>
+</div>

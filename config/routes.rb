@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  get 'users/new', to: redirect('/signup')
+#  get '/:id', to: 'users#show', as: :profile
+  resources :users, except: :index
+ get '/signup', to: 'users#new', as: :register
   
-	resources :articles
+  resources :articles
 
   root 'home#index'
   
