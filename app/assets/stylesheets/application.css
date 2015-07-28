@@ -16,6 +16,22 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 @import url(http://fonts.googleapis.com/css?family=Advent+Pro:100);
 
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+textarea[type=text] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+border: none;
+background-color: #F0FAFC;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
 h1{
 	font-family: 'Advent Pro', sans-serif;
 	font-size: 100px;
